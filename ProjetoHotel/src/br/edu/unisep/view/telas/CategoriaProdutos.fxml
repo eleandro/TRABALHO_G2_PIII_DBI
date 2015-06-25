@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="340.0" style="-fx-background-color: #F7F7F7; -fx-border-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unisep.view.telas.CategoriasProdutosController">
+   <children>
+      <Label layoutX="85.0" layoutY="21.0" text="CADASTRAR CATEGORIA">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="76.0" text="Categorias" />
+      <TextField fx:id="txtCategorias" layoutX="117.0" layoutY="72.0" prefHeight="25.0" prefWidth="159.0" />
+      <Button layoutX="228.0" layoutY="112.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+      <TableView fx:id="tabCategoria" layoutX="1.0" layoutY="178.0" prefHeight="172.0" prefWidth="345.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="177.0">
+        <columns>
+          <TableColumn fx:id="colCategoria" prefWidth="342.0" text="Categoria" />
+        </columns>
+      </TableView>
+      <Button layoutX="18.0" layoutY="361.0" mnemonicParsing="false" onAction="#excluir" prefHeight="25.0" prefWidth="57.0" text="Excluir" AnchorPane.bottomAnchor="14.0" />
+   </children>
+</AnchorPane>

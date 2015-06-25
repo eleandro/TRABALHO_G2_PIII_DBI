@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="855.0" style="-fx-background-color: #f7f7f7; -fx-border-color: #f5f5f5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.unisep.view.telas.PesquisarHospedagemController">
+   <children>
+      <Label alignment="CENTER" layoutX="300.0" layoutY="54.0" prefHeight="21.0" prefWidth="241.0" text="HOSPEDAGENS" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="110.0" prefHeight="17.0" prefWidth="60.0" text="Data Inical" />
+      <Button layoutX="614.0" layoutY="106.0" mnemonicParsing="false" onAction="#pesquisar" prefHeight="25.0" prefWidth="80.0" text="Pesquisar" />
+      <TableView fx:id="tabHospedagem" layoutX="13.0" layoutY="169.0" prefHeight="396.0" prefWidth="817.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="169.0">
+         <columns>
+            <TableColumn fx:id="colDataEntrda" prefWidth="175.0" text="Data Entrada" />
+            <TableColumn fx:id="colDataSaida" minWidth="0.0" prefWidth="146.0" text="Data Saida" />
+            <TableColumn fx:id="colHopedagem" prefWidth="533.0" text="Numero de Hospedagens" />
+         </columns>
+      </TableView>
+      <DatePicker fx:id="txtDataEntrada" layoutX="194.0" layoutY="106.0" prefHeight="25.0" prefWidth="120.0" />
+      <DatePicker fx:id="txtDataSaida" layoutX="430.0" layoutY="106.0" prefHeight="25.0" prefWidth="120.0" />
+      <Label layoutX="369.0" layoutY="110.0" prefHeight="17.0" prefWidth="53.0" text="Data Final" />
+   </children>
+</AnchorPane>
